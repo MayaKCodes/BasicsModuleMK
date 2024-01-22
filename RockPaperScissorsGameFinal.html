@@ -2,12 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Maya's Javascript practice</title>
+  <title>Rock, Paper, Scissors Game!</title>
 </head>
 <body>
+  <button onclick="startGame()">Start Game</button>
   <script>
-    // Your JavaScript goes here!
-    console.log("Hello, World!")
+    console.log("Input a selection to start the game")
 
     const getComputerChoice = (CompChoice) => {
       return CompChoice[Math.floor(Math.random() * CompChoice.length)];
@@ -70,8 +70,10 @@
       }
     }
 
-    // Uncomment the line below to start the game
-    game();
+    function startGame() {
+      console.log("Game is starting...");
+      game();
+    }
   </script>
 </body>
 </html>
